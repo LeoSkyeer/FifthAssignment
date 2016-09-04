@@ -39,7 +39,6 @@ function addQuery($user_name, $user_age, $user_message, $name_in_db, $link){
       )
 			";
 
-//    print_r($query_2);
     $result = mysqli_query($link,$query);
     $result_2 = mysqli_query($link,$query_2);
     if( $result === false ) {
@@ -68,12 +67,6 @@ function addQuery($user_name, $user_age, $user_message, $name_in_db, $link){
 
             }
         }
-
-
-
-
-
-
 // Авторизация
 
 function Autorization($e_login, $link) {

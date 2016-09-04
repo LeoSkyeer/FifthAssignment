@@ -3,6 +3,7 @@ require_once ('D:\openServer\OpenServer\domains\vitalyswipe\php\function.php');
 
 if (isset($_POST['add_user'])){
     if(empty($_POST['user_name']) || empty($_POST['user_age']) || empty($_POST['user_message'])) exit ("Данные отсутствуют");
+
     $link=connect();
     addQuery($_POST["user_name"], $_POST["user_age"],$_POST["user_message"], $name_in_db, $link);
     mysqli_close ($link);
@@ -11,7 +12,7 @@ if (isset($_POST['add_user'])){
 
 <div class="col-md-12">
   <div class="well" style="margin-top: 0%; background-color:lightgrey">
-        <h3 style="text-align: center;">Регистрационные данные</h3>
+        <h4 style="text-align: center;">Регистрация новых участников</h4>
         <form role="form" id="contactForm"  class="shake" action="services_view.php" method="POST" enctype="multipart/form-data">
             <!-- Имя -->
             <div class="row">
@@ -34,7 +35,7 @@ if (isset($_POST['add_user'])){
             <!--Картинка-->
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <label for="fileToUpload" class="h4">Загрузить картинку</label>
+                    <label for="fileToUpload" class="h4">Загрузить фотографию</label>
             <input type="file" class="file" name="fileToUpload" id="fileToUpload">
                 </div>
             </div>

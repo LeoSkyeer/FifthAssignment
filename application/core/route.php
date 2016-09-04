@@ -1,10 +1,5 @@
 <?php
 
-/*
-Класс-маршрутизатор для определения запрашиваемой страницы.
-> цепляет классы контроллеров и моделей;
-> создает экземпляры контролеров страниц и вызывает действия этих контроллеров.
-*/
 class Route
 {
 
@@ -33,11 +28,6 @@ class Route
 		$controller_name = 'Controller_'.$controller_name;
 		$action_name = 'action_'.$action_name;
 
-		/*
-		echo "Model: $model_name <br>";
-		echo "Controller: $controller_name <br>";
-		echo "Action: $action_name <br>";
-		*/
 
 		// подцепляем файл с классом модели (файла модели может и не быть)
 
@@ -57,10 +47,7 @@ class Route
 		}
 		else
 		{
-			/*
-			правильно было бы кинуть здесь исключение,
-			но для упрощения сразу сделаем редирект на страницу 404
-			*/
+
 			Route::ErrorPage404();
 		}
 		
@@ -75,7 +62,6 @@ class Route
 		}
 		else
 		{
-			// здесь также разумнее было бы кинуть исключение
 			Route::ErrorPage404();
 		}
 	
