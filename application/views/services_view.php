@@ -9,6 +9,16 @@ if (isset($_POST['add_user'])){
     mysqli_close ($link);
 }
 ?>
+<!doctype html>
+<html lang="RU-ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+</head>
+<body style="background-color:whitesmoke;">
+
+
+<div class="row">
 
 <div class="col-md-12">
   <div class="well" style="margin-top: 0%; background-color:lightgrey">
@@ -51,10 +61,11 @@ if (isset($_POST['add_user'])){
             <!--Кнопка-->
             <div class="row">
                 <div class="form-group col-sm-12 col-sm-offset-0">
-                    <input type="submit" class="col-xs-12 btn btn-md btn-success" value="Зарегистрироваться" name="add_user">
+                    <input type="submit" class="col-xs-12 btn btn-md btn-success" value="Зарегистрироваться" name="">
                 </div>
             </div>
             <div class="clearfix"></div>
         </form>
     </div>
 </div>
+    </div>

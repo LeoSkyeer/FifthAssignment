@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64473969-02ce-47c4-a57a-ff1caf60a510" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/controller.php" afterPath="$PROJECT_DIR$/application/core/controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/route.php" afterPath="$PROJECT_DIR$/application/core/route.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/view.php" afterPath="$PROJECT_DIR$/application/core/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/portfolio_view.php" afterPath="$PROJECT_DIR$/application/views/portfolio_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/services_view.php" afterPath="$PROJECT_DIR$/application/views/services_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/function.php" afterPath="$PROJECT_DIR$/php/function.php" />
     </list>
@@ -33,28 +31,19 @@
       <file leaf-file-name="services_view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/services_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            <state relative-caret-position="234">
+              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/function.php">
+      <file leaf-file-name="route.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/core/route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <marker date="1472975046120" expanded="true" signature="597:739" placeholder="INSERT INTO Registration_Data... " />
-                <marker date="1472975046120" expanded="true" signature="762:919" placeholder="INSERT INTO Image_Data... " />
-                <marker date="1472975046120" expanded="true" signature="827:887" placeholder="SELECT id FR... Registration_Data" />
-                <marker date="1472975046120" expanded="true" signature="1883:1939" placeholder="SELECT name Registration_Data" />
-                <marker date="1472975046120" expanded="true" signature="2211:2368" placeholder="SELECT Regis... Registration_Data" />
-                <marker date="1472975046120" expanded="true" signature="3531:3605" placeholder="SELECT image... Image_Data" />
-                <marker date="1472975046120" expanded="true" signature="3868:3965" placeholder="UPDATE Image... " />
-                <marker date="1472975046120" expanded="true" signature="4175:4266" placeholder="DELETE FROM " />
-              </folding>
+            <state relative-caret-position="475">
+              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,11 +65,12 @@
         <option value="$PROJECT_DIR$/application/views/template_view.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/application/views/portfolio_view.php" />
-        <option value="$PROJECT_DIR$/application/core/route.php" />
         <option value="$PROJECT_DIR$/application/core/view.php" />
         <option value="$PROJECT_DIR$/application/core/controller.php" />
-        <option value="$PROJECT_DIR$/application/views/services_view.php" />
         <option value="$PROJECT_DIR$/php/function.php" />
+        <option value="$PROJECT_DIR$/application/views/services_view.php" />
+        <option value="$PROJECT_DIR$/application/core/route.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
   </component>
@@ -246,7 +236,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mvc" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
   </component>
@@ -324,12 +314,12 @@
       <option name="presentableId" value="Default" />
       <updated>1472960402186</updated>
       <workItem from="1472960403706" duration="10343000" />
-      <workItem from="1472973766794" duration="1298000" />
+      <workItem from="1472973766794" duration="4264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11641000" />
+    <option name="totallyTimeSpent" value="14607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -385,14 +375,14 @@
         <state relative-caret-position="375">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
-            <marker date="1472975046120" expanded="true" signature="597:739" placeholder="INSERT INTO Registration_Data... " />
-            <marker date="1472975046120" expanded="true" signature="762:919" placeholder="INSERT INTO Image_Data... " />
-            <marker date="1472975046120" expanded="true" signature="827:887" placeholder="SELECT id FR... Registration_Data" />
-            <marker date="1472975046120" expanded="true" signature="1883:1939" placeholder="SELECT name Registration_Data" />
-            <marker date="1472975046120" expanded="true" signature="2211:2368" placeholder="SELECT Regis... Registration_Data" />
-            <marker date="1472975046120" expanded="true" signature="3531:3605" placeholder="SELECT image... Image_Data" />
-            <marker date="1472975046120" expanded="true" signature="3868:3965" placeholder="UPDATE Image... " />
-            <marker date="1472975046120" expanded="true" signature="4175:4266" placeholder="DELETE FROM " />
+            <marker date="1472978477511" expanded="true" signature="584:726" placeholder="INSERT INTO Registration_Data... " />
+            <marker date="1472978477511" expanded="true" signature="751:920" placeholder="INSERT INTO Image_Data... " />
+            <marker date="1472978477511" expanded="true" signature="824:884" placeholder="SELECT id FR... Registration_Data" />
+            <marker date="1472978477511" expanded="true" signature="1938:1994" placeholder="SELECT name Registration_Data" />
+            <marker date="1472978477511" expanded="true" signature="2292:2449" placeholder="SELECT Regis... Registration_Data" />
+            <marker date="1472978477511" expanded="true" signature="3712:3794" placeholder="SELECT image... Image_Data" />
+            <marker date="1472978477511" expanded="true" signature="4083:4190" placeholder="UPDATE Image... " />
+            <marker date="1472978477511" expanded="true" signature="4424:4520" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -406,13 +396,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery-1.6.2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1750">
@@ -450,14 +433,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -473,14 +448,6 @@
           <folding>
             <element signature="e#77#79#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/controller_services.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,14 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -588,28 +547,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/services_view.php">
+    <entry file="file://$PROJECT_DIR$/php/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="675">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <marker date="1472978477511" expanded="true" signature="584:726" placeholder="INSERT INTO Registration_Data... " />
+            <marker date="1472978477511" expanded="true" signature="751:920" placeholder="INSERT INTO Image_Data... " />
+            <marker date="1472978477511" expanded="true" signature="824:884" placeholder="SELECT id FR... Registration_Data" />
+            <marker date="1472978477511" expanded="true" signature="1938:1994" placeholder="SELECT name Registration_Data" />
+            <marker date="1472978477511" expanded="true" signature="2292:2449" placeholder="SELECT Regis... Registration_Data" />
+            <marker date="1472978477511" expanded="true" signature="3712:3794" placeholder="SELECT image... Image_Data" />
+            <marker date="1472978477511" expanded="true" signature="4083:4190" placeholder="UPDATE Image... " />
+            <marker date="1472978477511" expanded="true" signature="4424:4520" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/controller_services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/function.php">
+    <entry file="file://$PROJECT_DIR$/application/views/services_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <marker date="1472975046120" expanded="true" signature="597:739" placeholder="INSERT INTO Registration_Data... " />
-            <marker date="1472975046120" expanded="true" signature="762:919" placeholder="INSERT INTO Image_Data... " />
-            <marker date="1472975046120" expanded="true" signature="827:887" placeholder="SELECT id FR... Registration_Data" />
-            <marker date="1472975046120" expanded="true" signature="1883:1939" placeholder="SELECT name Registration_Data" />
-            <marker date="1472975046120" expanded="true" signature="2211:2368" placeholder="SELECT Regis... Registration_Data" />
-            <marker date="1472975046120" expanded="true" signature="3531:3605" placeholder="SELECT image... Image_Data" />
-            <marker date="1472975046120" expanded="true" signature="3868:3965" placeholder="UPDATE Image... " />
-            <marker date="1472975046120" expanded="true" signature="4175:4266" placeholder="DELETE FROM " />
-          </folding>
+        <state relative-caret-position="234">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
