@@ -1,8 +1,61 @@
 <?php
 
-class Main_Function {
+class Main_Function
+{
+    private $PDO = false;
+    private $serverName = MAIN_SERVER;
+    private $username = MAIN_USER;
+    private $password = MAIN_PASSWORD;
+    private $database = MAIN_DATABASE;
 
+
+    public function __construct()
+    {
+        try{
+            $this->PDO = new PDO("mysql:$this->database; $this->serverName", $this->username, $this->password);
+        }catch (PDOException $e){
+            echo "Ошибка соединения: ".$e->getMessage();
+            exit;
+        }
+
+        }
+
+        public function __destruct()
+        {
+            if ($this->PDO){
+                exit($this->PDO);
+        }
 }
+
+        public function GetCredential(){
+            $sql="
+                SELECT name FROM Registration_Data
+                ";
+            $stmt = $this->PDO->query($sql);
+
+
+            $rows = $stmt->fetchAll(PDO::FETCH_OBJ);
+            print_r($rows);
+//            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+//                echo "{$row['Name']}.</br>";
+//            }
+        }
+
+
+
+
+
+//if (isset($_POST['add_user'])){
+//if(empty($_POST['user_name']) || empty($_POST['user_age']) || empty($_POST['user_message'])) exit ("Данные отсутствуют");
+//
+//$link=connect();
+//addQuery($_POST["user_name"], $_POST["user_age"],$_POST["user_message"], $name_in_db, $link);
+//mysqli_close ($link);
+//}
+
+    }
+
+
 
 
 //$server="localhost";

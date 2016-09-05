@@ -1,14 +1,3 @@
-<?php
-require_once ('C:\OpenServer\domains\FifthAssignment\function.php');
-
-if (isset($_POST['add_user'])){
-    if(empty($_POST['user_name']) || empty($_POST['user_age']) || empty($_POST['user_message'])) exit ("Данные отсутствуют");
-
-    $link=connect();
-    addQuery($_POST["user_name"], $_POST["user_age"],$_POST["user_message"], $name_in_db, $link);
-    mysqli_close ($link);
-}
-?>
 <!doctype html>
 <html lang="RU-ru">
 <head>
