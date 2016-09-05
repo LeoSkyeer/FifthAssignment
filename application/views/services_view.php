@@ -1,5 +1,5 @@
 <?php
-require_once ('D:\openServer\OpenServer\domains\vitalyswipe\php\function.php');
+require_once ('C:\OpenServer\domains\FifthAssignment\function.php');
 
 if (isset($_POST['add_user'])){
     if(empty($_POST['user_name']) || empty($_POST['user_age']) || empty($_POST['user_message'])) exit ("Данные отсутствуют");
@@ -15,7 +15,7 @@ if (isset($_POST['add_user'])){
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="UTF-8">
 </head>
-<body style="background-color:whitesmoke;">
+<body>
 
 
 <div class="row">
