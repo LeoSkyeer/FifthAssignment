@@ -8,7 +8,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
 		<link href="http://fonts.googleapis.com/css?family=Kreon" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css.css" />
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
 		<script src="/js/jquery-1.6.2.js" type="text/javascript"></script>
 	</head>
@@ -18,7 +18,7 @@
 				<div id="menu"">
 					<ul>
 						<li class="first active"><a href="/">Главная</a></li>
-						<li><a href="/services">Регистрация</a></li>
+						<li><a href="/registration">Регистрация</a></li>
 						<li><a href="/list">Список</a></li>
 						<li class="last"><a href="/contacts">Контакты</a></li>
 					</ul>
@@ -31,7 +31,7 @@
 						<h3>Основное меню</h3>
 						<ul class="list">
 							<li class="first "><a href="/">Главная</a></li>
-							<li><a href="/services">Регистрация</a></li>
+							<li><a href="/registration">Регистрация</a></li>
 							<li><a href="/list">Список</a></li>
 							<li class="last"><a href="/contacts">Контакты</a></li>
 						</ul>

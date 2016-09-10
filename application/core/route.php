@@ -31,6 +31,7 @@ class Route
 		$controller_name = 'Controller_'.$controller_name;
 		echo $controller_name.'<br>';
 		$action_name = 'action_'.$action_name;
+		echo $action_name.'<br>';
 
 
 		// подцепляем файл с классом модели (файла модели может и не быть)
