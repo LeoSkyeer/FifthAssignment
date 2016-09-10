@@ -19,7 +19,7 @@
 					<ul>
 						<li class="first active"><a href="/">Главная</a></li>
 						<li><a href="/services">Регистрация</a></li>
-						<li><a href="/portfolio">Список</a></li>
+						<li><a href="/list">Список</a></li>
 						<li class="last"><a href="/contacts">Контакты</a></li>
 					</ul>
 					<br class="clearfix" />
@@ -32,7 +32,7 @@
 						<ul class="list">
 							<li class="first "><a href="/">Главная</a></li>
 							<li><a href="/services">Регистрация</a></li>
-							<li><a href="/portfolio">Список</a></li>
+							<li><a href="/list">Список</a></li>
 							<li class="last"><a href="/contacts">Контакты</a></li>
 						</ul>
 					</div>

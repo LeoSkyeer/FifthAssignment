@@ -10,29 +10,35 @@ class Route
 		$action_name = 'index';
 		
 		$routes = explode('/', $_SERVER['REQUEST_URI']);
+//		print_r($routes);
 
 		// получаем имя контроллера
 		if ( !empty($routes[1]) )
 		{	
 			$controller_name = $routes[1];
-		}
+			}
 		
 		// получаем имя экшена
 		if ( !empty($routes[2]) )
 		{
 			$action_name = $routes[2];
+
 		}
 
 		// добавляем префиксы
 		$model_name = 'Model_'.$controller_name;
+		echo $model_name.'<br>';
 		$controller_name = 'Controller_'.$controller_name;
+		echo $controller_name.'<br>';
 		$action_name = 'action_'.$action_name;
 
 
 		// подцепляем файл с классом модели (файла модели может и не быть)
 
 		$model_file = strtolower($model_name).'.php';
+		echo $model_file.'<br>';
 		$model_path = "application/models/".$model_file;
+		echo $model_path.'<br>';
 		if(file_exists($model_path))
 		{
 			include "application/models/".$model_file;
@@ -40,7 +46,9 @@ class Route
 
 		// подцепляем файл с классом контроллера
 		$controller_file = strtolower($controller_name).'.php';
+		echo $controller_file.'<br>';
 		$controller_path = "application/controllers/".$controller_file;
+		echo $controller_path.'<br>';
 		if(file_exists($controller_path))
 		{
 			include "application/controllers/".$controller_file;
@@ -48,12 +56,16 @@ class Route
 		else
 		{
 
-			Route::ErrorPage404();
+			$controller_name = 'Controller_404';
+			$str= strtolower($controller_name);
+			include "application/controllers/".$str.'.php';
+
 		}
 		
 		// создаем контроллер
 		$controller = new $controller_name;
 		$action = $action_name;
+
 
 
 		if(method_exists($controller, $action))
@@ -63,17 +75,9 @@ class Route
 		}
 		else
 		{
-			Route::ErrorPage404();
+		echo 'method not found';
 		}
-	
+
 	}
 
-	function ErrorPage404()
-	{
-        $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
-//        header('HTTP/1.1 404 Not Found');
-//		header("Status: 404 Not Found");
-//		header('Location:'.$host.'404');
-    }
-    
 }
