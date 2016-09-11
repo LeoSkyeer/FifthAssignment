@@ -8,7 +8,6 @@ class Route
 		// контроллер и действие по умолчанию
 		$controller_name = 'Main';
 		$action_name = 'index';
-		
 		$routes = explode('/', $_SERVER['REQUEST_URI']);
 //		print_r($routes);
 
@@ -31,25 +30,25 @@ class Route
 		$controller_name = 'Controller_'.$controller_name;
 		echo $controller_name.'<br>';
 		$action_name = 'action_'.$action_name;
-		echo $action_name.'<br>';
+		echo $action_name.'<br><br>';
 
 
-		// подцепляем файл с классом модели (файла модели может и не быть)
+		echo 'подцепляем файл с классом модели (файла модели может и не быть)<br>';
 
 		$model_file = strtolower($model_name).'.php';
 		echo $model_file.'<br>';
 		$model_path = "application/models/".$model_file;
-		echo $model_path.'<br>';
+		echo $model_path.'<br><br>';
 		if(file_exists($model_path))
 		{
 			include "application/models/".$model_file;
 		}
 
-		// подцепляем файл с классом контроллера
+		echo 'подцепляем файл с классом контроллера<br>';
 		$controller_file = strtolower($controller_name).'.php';
 		echo $controller_file.'<br>';
 		$controller_path = "application/controllers/".$controller_file;
-		echo $controller_path.'<br>';
+		echo $controller_path.'<br><br>';
 		if(file_exists($controller_path))
 		{
 			include "application/controllers/".$controller_file;

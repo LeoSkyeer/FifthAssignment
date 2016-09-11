@@ -12,7 +12,7 @@
 <div class="col-md-12">
   <div class="well" style="margin-top: 0%; background-color:lightgrey">
         <h4 style="text-align: center;">Регистрация новых участников</h4>
-        <form role="form" id="contactForm"  class="shake" action="registration_view.php" method="POST" enctype="multipart/form-data">
+        <form role="form" id="contactForm"  class="shake" action="sendregistration/send_reg" method="POST" enctype="multipart/form-data">
             <!-- Имя -->
             <div class="row">
                 <div class="form-group col-sm-12">
@@ -32,12 +32,12 @@
             </div>
 
             <!--Картинка-->
-            <div class="row">
-                <div class="form-group col-sm-12">
-                    <label for="fileToUpload" class="h4">Загрузить фотографию</label>
-            <input type="file" class="file" name="fileToUpload" id="fileToUpload">
-                </div>
-            </div>
+<!--            <div class="row">-->
+<!--                <div class="form-group col-sm-12">-->
+<!--                    <label for="fileToUpload" class="h4">Загрузить фотографию</label>-->
+<!--            <input type="file" class="file" name="fileToUpload" id="fileToUpload">-->
+<!--                </div>-->
+<!--            </div>-->
 
             <!-- О себе -->
             <div class="row">
