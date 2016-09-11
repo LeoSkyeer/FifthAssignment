@@ -6,8 +6,7 @@
 
 	?>
 <div class="row" style="margin-top: 30px">
-
-
+	
     <form role="form" class="shake" action="sendLogin\send" method="POST" id="loginPassword" data-toggle="validator" name="setLogin" enctype="multipart/form-data">
   <div class="col-md-8 col-md-offset-2" >
   		<div class="well" style="background-color:lightgrey" >
