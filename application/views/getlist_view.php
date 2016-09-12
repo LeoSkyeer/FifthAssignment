@@ -8,7 +8,7 @@
                   </div>
 
                   <div class="col-md-4">
-                    <p> </p>
+                    <p><?php ?></p>
                   </div>
 
                 </div>
