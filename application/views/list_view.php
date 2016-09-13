@@ -16,10 +16,9 @@
   									<input id="login" type="text" name="userLogin" placeholder="Login" class="form-control">
   									<div class="help-block with-errors"></div>
   							</div>
-
                     	<input type="submit" class="col-md-6 btn btn-xs btn-success col-md-offset-3" value="Login" name="setLogin">
   					</div>
-  					<div id="msgSubmit" class="h3 text-center hidden">
+
             </div>
   </div>
 
