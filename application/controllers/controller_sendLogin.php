@@ -21,23 +21,30 @@ class Controller_sendLogin extends Controller{
 
     public function action_send()
     {
-		if (isset($_POST['userLogin'])) {
-			$names = Array();
-			$sql = 'SELECT * FROM Registration_Data';
-			foreach ($this->pdo->query($sql) as $row) {
-				array_push($names, $row['name']);
-			}
-			if (in_array($_POST['userLogin'], $names)){
-                $this->view->viewBag = $names;
-			}else {
+        if (isset($_POST['userLogin'])) {
+            $rows = Array();
+            $sql = 'SELECT name, age FROM Registration_Data';
+            foreach ($this->pdo->query($sql) as $row){
+                array_push($rows, $row);
+            }
+            $isNameFound = false;
+            foreach ($rows as $row) {
+                if ($_POST['userLogin'] == $row['name']) {
+                    $isNameFound = true;
+                    break;
+                }
+            }
+            if ($isNameFound){
+                $this->view->viewBag = $rows;
+            }else{
                 $controller_name = 'Controller_Error';
                 $str = strtolower($controller_name);
                 include "application/controllers/" . $str . '.php';
                 new Controller_Error($this->action_error());
             }
-		}else {
-		    echo "error";
-        }
-        $this->view->generate('getlist_view.php', 'template_view.php');
+            $this->view->generate('getlist_view.php', 'template_view.php');
     }
 }
+}
+
+

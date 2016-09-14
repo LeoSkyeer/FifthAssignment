@@ -1,6 +1,6 @@
 <?php
     if (empty($viewBag) ) echo 'WRONG DATA';
-     foreach ($viewBag as $value){
+foreach ($viewBag as $value){
     echo '
 
             <div class="well">
@@ -12,7 +12,7 @@
                   </div>
 
                   <div class="col-md-4">
-                    <p>'.$value.'</p>
+                    <p>'.$value['name'].'</p>
                   </div>
 
                 </div>
@@ -23,6 +23,7 @@
                   </div>
 
                   <div class="col-md-4">
+                  <p>'.$value['age'].'</p>
                   </div>
                 </div>
                 
