@@ -23,7 +23,7 @@ class Controller_sendLogin extends Controller{
     {
         if (isset($_POST['userLogin'])) {
             $rows = Array();
-            $sql = 'SELECT name, age FROM Registration_Data';
+            $sql = 'SELECT name, age FROM Registration_Data ORDER BY age';
             foreach ($this->pdo->query($sql) as $row){
                 array_push($rows, $row);
             }
