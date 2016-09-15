@@ -42,6 +42,7 @@ class Controller_sendLogin extends Controller{
                 include "application/controllers/" . $str . '.php';
                 new Controller_Error($this->action_error());
             }
+
             $this->view->generate('getlist_view.php', 'template_view.php');
     }
 }

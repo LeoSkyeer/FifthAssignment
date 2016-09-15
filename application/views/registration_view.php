@@ -32,12 +32,12 @@
             </div>
 
             <!--Картинка-->
-<!--            <div class="row">-->
-<!--                <div class="form-group col-sm-12">-->
-<!--                    <label for="fileToUpload" class="h4">Загрузить фотографию</label>-->
-<!--            <input type="file" class="file" name="fileToUpload" id="fileToUpload">-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="row">
+                <div class="form-group col-sm-12">
+                    <label for="fileToUpload" class="h4">Загрузить фотографию</label>
+            <input type="file" class="file" name="fileToUpload" id="fileToUpload">
+                </div>
+            </div>
 
             <!-- О себе -->
             <div class="row">
