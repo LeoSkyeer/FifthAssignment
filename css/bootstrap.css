@@ -6753,5 +6753,10 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+
+  .row::before,  .row::after{
+    display: initial;
+  }
+
 }
 /*# sourceMappingURL=bootstrap.css.map */

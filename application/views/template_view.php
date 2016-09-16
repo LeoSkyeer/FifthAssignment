@@ -8,7 +8,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
 		<link href="http://fonts.googleapis.com/css?family=Kreon" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+<!--		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />-->
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
 		<script src="/js/jquery-1.6.2.js" type="text/javascript"></script>
 	</head>

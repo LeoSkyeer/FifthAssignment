@@ -1,10 +1,5 @@
 <h4 style="text-align: center">Список членов организации</h4>
 <p style="text-align: center">(только для зарегестрированных лиц) </p>
-<!--<table>-->
-<!--<tr><td>Имя</td><td>Возраст</td><td>Сообщение</td></tr>-->
-	<?php
-
-	?>
 <div class="row" style="margin-top: 30px">
 	
     <form role="form" class="shake" action="sendLogin\send" method="POST" id="loginPassword" data-toggle="validator" name="setLogin" enctype="multipart/form-data">
