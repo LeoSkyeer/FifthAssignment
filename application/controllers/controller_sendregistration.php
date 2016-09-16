@@ -28,15 +28,12 @@ Class controller_sendregistration extends Controller{
                 "message" => $_POST['user_message']
             ));
 
-            if (isset($_FILES['fileToUpload'])){
-                echo "файл не был загружен";
-            }else{
                 $path = 'photos/';
                 $ext = array_pop(explode('.', $_FILES['fileToUpload']['image'])); // расширение
                 $new_name = time() . '.' . $ext;
                 $full_path = $path . $new_name;
                 $name_in_db = substr($new_name, 0, -1);
-
+                echo $name_in_db;
                 if ($_FILES['fileToUpload']['error'] == 0) {
                     if (substr($_FILES["fileToUpload"]["name"], -3) == "jpg" || substr($_FILES["file"]["name"], -3) == "png") {
                         if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $full_path)) {
@@ -44,7 +41,7 @@ Class controller_sendregistration extends Controller{
                         }
                     }
                 }
-            }
+
 
             $stmt2 = $this->pdo->prepare("INSERT INTO Image_Data (user_id, image) VALUES ((SELECT id FROM Registration_Data WHERE NAME = :user_name), '".$name_in_db."')");
             $stmt2->bindParam(':user_name', $_POST['user_name']);

@@ -1,6 +1,5 @@
 <?php
-    if (empty($viewBag) ) echo 'WRONG DATA';
-foreach ($viewBag as $value){
+foreach ($viewBag as $value) {
     echo '
 
             <div class="well">
@@ -12,7 +11,7 @@ foreach ($viewBag as $value){
                   </div>
 
                   <div class="col-md-4">
-                    <p>'.$value['name'].'</p>
+                    <p>' . $value[name] . '</p>
                   </div>
 
                 </div>
@@ -23,7 +22,7 @@ foreach ($viewBag as $value){
                   </div>
 
                   <div class="col-md-4">
-                  <p>'.$value['age'].'</p>
+                  <p>' . $value[age] . '</p>
                   </div>
                 </div>
                 
@@ -33,21 +32,17 @@ foreach ($viewBag as $value){
                   </div>
 
                   <div class="col-md-4">
-                    <p></p>
+                    <img style="width:222px;" src="/photos/' . $value[image] . '">
                   </div>
                 </div>
 
-                  <div class="col-md-offset-9 ">
-                     <a href="">Редактировать</a>
-                  </div>
-                  
-                  <div class="col-md-offset-9 ">
+                  <div class="col-md-offset-5 ">
                    <a href="">Удалить картинку</a>
                   </div>
 
             </div>
 
             ';
-
-} ?>
+}
+?>
 
